@@ -2,7 +2,13 @@
   text-align: center;
   background-color:#24252a ;
 }
-
+div{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #24252a ;
+  
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

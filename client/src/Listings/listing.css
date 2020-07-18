@@ -1,12 +1,9 @@
-div{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    background-color: #24252a ;
+.listing-wrapper{
+    height: 600px ;
 }
 .table{
-    display: inline;
-    
+    position: absolute;
+    left: 30%;
 }
 
 th{

@@ -50,8 +50,8 @@ export default class listing extends Component {
 
   render() {
     return (
-      <div>
-        <h3>Logged Homes</h3>
+      <div className="listing-wrapper">
+        <h3 style={{"text-align":"center"}}>Logged Homes</h3>
         <table className="table">
           <thead className="thead-light">
             <tr>

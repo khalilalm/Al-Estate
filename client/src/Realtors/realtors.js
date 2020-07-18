@@ -1,50 +1,18 @@
 import React, { Component } from "react";
-
-import Pagination from "react-js-pagination";
 import "./realtors.css";
-import axios from 'axios';
 class realtors extends Component {
-   state = {
-     pics: [],
-     array: [1,2,3,4,5],
-     page: 1
-   }
-     handlePageChange = (pageNum) =>{
-      fetch(`https://jsonplaceholder.typicode.com/photos`)
-      .then((res) => res.json())
-      .then((res) => this.setState( {
-        pics: res[1].id[1]
-      }))
-      console.log(`active page is ${pageNum}`);
-       this.setState({page: pageNum
-     })
-     }
 
   render() { 
-      const picsApi = 
-     fetch(`https://jsonplaceholder.typicode.com/photos`)
-    .then((res) => res.json())
-    .then((res) => this.setState( {
-      pics: res.url
-    }))
-   
-    const picItems = <img src={this.state.pics} className='img'></img >
+    
 
     return (
-      <div className="realtors-wrapper">
+      <div className="realtors-wrapper"> 
+      <h1 className="realtors-title">Realtors</h1>
         <div className="realtors-content">
-          <h1>Realtors</h1>
-
-          <div>
-            {picItems}
-          </div>
-          <Pagination 
-          activePage={this.state.page}
-          itemsCountPerPage={10}
-          totalItemsCount={500}
-          pageRangeDisplayed={5}
-          onChange={this.handlePageChange}
-          />
+         
+          <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d47872.170767796284!2d-75.63564868636612!3d41.41728698303775!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1srealtors!5e0!3m2!1sen!2sus!4v1595098450986!5m2!1sen!2sus" allowfullscreen="" aria-hidden="false" tabindex="0">
+            
+          </iframe>
         </div>
       </div>
     );

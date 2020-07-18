@@ -1,8 +1,22 @@
-.listing{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+
+.realtors-wrapper{
+    height: 1000px;
+   
+}
+.realtors-content{
+   position: absolute;
+    left: 25%;
+    top: 50%;
 }
 .img{
     width:100px;
     height:100px
+}
+.realtors-title{
+text-align: center;
+}
+iframe{
+    
+    width: 700px;
+    height:500px;
 }
