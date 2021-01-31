@@ -1,0 +1,38 @@
+nav{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252a ;
+    }
+li{
+    display: inline-block;
+    padding: 10px 10%;
+    font: 1em georgia;
+    
+}
+.nav-link{
+    list-style: none;
+    margin-right: auto;
+    }
+   
+.nav-title{
+    cursor: pointer;
+    display: grid ;
+    grid-column: 20px;
+    font: 1em slovic;
+    color:  rgb(94, 0, 94);
+}
+
+.line{
+    border: 1px solid black;
+    margin: 20px;
+}
+
+@media screen and (max-width:920px){
+    nav{
+        width: 500px;
+    }
+    ul li{
+        width: 500px;
+    }
+}

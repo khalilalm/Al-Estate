@@ -1,0 +1,12 @@
+.listing-wrapper{
+    height: 600px ;
+}
+.table{
+    position: absolute;
+    left: 30%;
+}
+
+th{
+    padding: 20px;
+    
+}

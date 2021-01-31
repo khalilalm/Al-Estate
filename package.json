@@ -1,0 +1,39 @@
+{
+  "name": "al-estate",
+  "version": "1.0.0",
+  "description": "Home tracking website using another real estate api running React frontend",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd Backend && node server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "engines": {
+    "node": "12.14.0"
+  },
+  "proxy": "http://localhost:5000",
+  "repository": {
+    "type": "git",
+    "url": "Al-Estate"
+  },
+  "author": "Khalil Al-Mujeeb",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "body-parser": "^1.19.0",
+    "bootstrap": "^4.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "helmet": "^3.22.0",
+    "http-proxy-middleware": "^1.0.5",
+    "mongoose": "^5.9.16",
+    "node-fetch": "^2.6.0",
+    "node-zillow": "^2.0.0",
+    "nodemon": "^2.0.4",
+    "passport": "^0.4.1",
+    "react-bootstrap": "^1.0.1",
+    "react-datepicker": "^3.0.0",
+    "react-js-pagination": "^3.0.3"
+  }
+}
