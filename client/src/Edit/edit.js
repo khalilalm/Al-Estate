@@ -24,7 +24,7 @@ export default class EditHome extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:5000/homes/'+this.props.match.params.id)
+    axios.get('http://localhost:6002/homes/'+this.props.match.params.id)
       .then(response => {
         this.setState({
           username: response.data.username,
@@ -37,7 +37,7 @@ export default class EditHome extends Component {
         console.log(error);
       })
 
-    axios.get('http://localhost:5000/users/')
+    axios.get('http://localhost:6002/users/')
       .then(response => {
         if (response.data.length > 0) {
           this.setState({
@@ -87,7 +87,7 @@ export default class EditHome extends Component {
 
     console.log(home);
 
-    axios.post('http://localhost:5000/homes/update/' + this.props.match.params.id, home)
+    axios.post('http://localhost:6002/homes/update/' + this.props.match.params.id, home)
       .then(res => console.log(res.data));
 
     window.location = '/Listings';
