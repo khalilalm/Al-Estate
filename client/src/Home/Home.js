@@ -41,7 +41,7 @@ class home extends Component {
     e.preventDefault();
     const user = { username: this.state.username };
     axios
-      .post("/users/add", user)
+      .post("http://localhost:5001/users/add", user)
       .then((res) => console.log(res.data));
     this.setState({ username: "" });
 
@@ -55,7 +55,7 @@ class home extends Component {
     console.log(home);
 
     axios
-      .post("/homes/add", home)
+      .post("http://localhost:6002/homes/add", home)
       .then((res) => console.log(res.data));
     this.setState({ description: "", pricing: 0, date: new Date() });
 

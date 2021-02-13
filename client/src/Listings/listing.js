@@ -23,7 +23,7 @@ export default class listing extends Component {
   }
 
   componentDidMount() {
-    axios.get('/homes')
+    axios.get('http://localhost:5001/homes')
       .then(response => {
         this.setState({ homes: response.data })
       })
@@ -33,7 +33,7 @@ export default class listing extends Component {
   }
 
   deleteHome(id) {
-    axios.delete('/homes/'+id)
+    axios.delete('http://localhost:5001/homes/'+id)
       .then(response => { console.log(response.data)});
 
     this.setState({
