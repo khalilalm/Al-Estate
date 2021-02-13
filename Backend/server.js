@@ -25,12 +25,12 @@ app.use("/homes", homesRouter);
 app.use("/users", usersRouter);
 
 if(process.env.NODE_ENV ==='production'){
-  app.use(express.static('al-estate/build'))
+  app.use(express.static('client/build'))
 
-  app.use(express.static(path.join(__dirname, "../al-estate", "build")))
+  app.use(express.static(path.join(__dirname, "../client", "build")))
 
   app.get("*", (req, res) => {
-    res.sendFile(path.join(__dirname, "../al-estate", "build", "index.html"));
+    res.sendFile(path.join(__dirname, "../client", "build", "index.html"));
 });
 }
 const port = process.env.PORT || 5001;
