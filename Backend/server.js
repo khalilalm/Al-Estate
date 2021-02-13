@@ -24,15 +24,15 @@ const usersRouter = require("./routes/users");
 app.use("/homes", homesRouter);
 app.use("/users", usersRouter);
 
-// if(process.env.NODE_ENV ==='production'){
-//   app.use(express.static('al-estate/build'))
+if(process.env.NODE_ENV ==='production'){
+  app.use(express.static('al-estate/build'))
 
-//   app.use(express.static(path.join(__dirname, "../al-estate-a", "build")))
+  app.use(express.static(path.join(__dirname, "../al-estate-a", "build")))
 
-//   app.get("*", (req, res) => {
-//     res.sendFile(path.join(__dirname, "../al-estate-a", "build", "index.html"));
-// });
-// }
+  app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "../al-estate-a", "build", "index.html"));
+});
+}
 const port = process.env.PORT || 5001;
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);

@@ -1,4 +1,4 @@
 [build]
-  base = "Al-Estate"
+  base = "client"
   publish = "build"
   command = "npm run build"
