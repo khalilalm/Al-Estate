@@ -59,7 +59,7 @@ class home extends Component {
       .then((res) => console.log(res.data));
     this.setState({ description: "", pricing: 0, date: new Date() });
 
-    window.location = "https://602c797a18ad680007502fef--jolly-bohr-4cbb79.netlify.app/Listings";
+    window.location = "https://602c7a945ac8f10008454f38--jolly-bohr-4cbb79.netlify.app/Listings#";
   };
 
   render() {
