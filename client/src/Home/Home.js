@@ -55,11 +55,11 @@ class home extends Component {
     console.log(home);
 
     axios
-      .post("http://localhost:6002/homes/add", home)
+      .post("http://localhost:5001/homes/add", home)
       .then((res) => console.log(res.data));
     this.setState({ description: "", pricing: 0, date: new Date() });
 
-    window.location = "/listings";
+    window.location = "/listing";
   };
 
   render() {
