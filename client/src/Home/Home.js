@@ -59,7 +59,7 @@ class home extends Component {
       .then((res) => console.log(res.data));
     this.setState({ description: "", pricing: 0, date: new Date() });
 
-    window.location = "/listing";
+    window.location = "/Listings";
   };
 
   render() {
